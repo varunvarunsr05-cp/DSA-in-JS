@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function countOvels(str){
+           let ovels="aeiou";
+           let count=0;
+
+            for (let char of str.toLowerCase()) {
+                // console.log(char)
+                if (ovels.includes(char)) {
+                    count++;
+                }
+            }
+            // return count;
+            console.log(count)
+        }
+
+        countOvels("IAMNGeeioG");
+
+
+        // function findOvels(str){
+        //     let count={};
+        //     // let ovels={"a":0,"e":0,"i":0,"o":0,"u":0}
+        //     let ovels="aeiou"
+        //     let incr=0;
+
+        //     for (let char of ovels) {
+        //         // console.log(char)
+        //         for (const char1 of str) {      
+        //             // console.log(char1)
+        //             if (char==char1) {
+        //                 // console.log(char)
+        //                 count[char]=(count[char]||0)+1
+        //                 values= Object.values(count)
+        //                 // console.log(count)
+        //             }
+        //         }
+        //     }
+        //     for (let char of ovels) {
+        //         if (count[char]>=1) {
+        //             // console.log(count[char])
+        //             incr++
+        //         }
+        //     }
+        //     console.log(incr)
+        // }
+        // findOvels("aaei")
+        // // let ovels={"a":0,"e":0,"i":0,"o":0,"u":0}
+            // console.log(Object.keys(ovels))
+    </script>
+</body>
+</html>
