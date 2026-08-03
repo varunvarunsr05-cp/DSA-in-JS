@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let nums=[10,5,80,200,15,550];
+        // nums[0]=90;
+        let word="hello, i am , raj"
+
+    //    console.log(nums.indexOf(20))
+
+       function index(nums,max){
+        let index=nums.indexOf(max)
+        nums[index]=0;
+       }
+        
+        function findMax(){
+            let max=nums[0];
+            let max1=nums[0];
+
+            for (const num of nums) {
+                if (num>max) {
+                    max=num;
+                }
+            }
+            
+            for (const num of nums) {
+                if (num>max1 && num!==max) {
+                    max1=num;
+                }
+            }
+            console.log(max1)
+        }
+        // findMax(nums1)
+        findMax()
+    </script>
+</body>
+
+</html>

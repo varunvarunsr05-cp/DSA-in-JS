@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("hi")
+        let str1="evil";
+        let str2="vile";
+
+        let conts=str2.includes("")
+
+        function iscontains(){
+            let nstr="";
+            for (const char of str1) {
+                console.log(`"${char}"`);
+                let ifContain=str2.includes(char)
+                console.log(ifContain)
+                if (ifContain) {
+                    nstr+=char;
+                }
+            }
+            if (nstr.length===str2.length) {
+                console.log(`🫡"${nstr}" contains all chars of "${str2}"  with a equal no. of ${nstr.length} letters`);
+                // console.log(nstr)
+            }
+            else{
+                console.log(`❌"${nstr}" are the only matching chars of "${str2}" `);
+            }
+        }
+        iscontains()
+        // console.log(conts)
+        // console.log(str1==str2)
+    </script>
+</body>
+</html>
