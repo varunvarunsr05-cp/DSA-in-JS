@@ -1,14 +1,5 @@
-<!--moderate qn-write a function to reverse each word in a sentance without changing the word order -->
+// <!--moderate qn-write a function to reverse each word in a sentance without changing the word order -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
         // let nums=[1,2,3,4]
         
         // console.log(sentance.split(" "));
@@ -33,6 +24,3 @@
         }
 
         reverseWord()
-    </script>
-</body>
-</html>

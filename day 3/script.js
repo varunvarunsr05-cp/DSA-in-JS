@@ -1,16 +1,5 @@
-<!-- easy qn-write a function to find second largest number in an array -->
+// <!-- easy qn-write a function to find second largest number in an array -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <script>
         // let nums=[6,7,44];
     //     // nums[0]=90;
     //     let word="hello, i am , raj"
@@ -59,7 +48,3 @@
     }
 
     secondLargest(nums)
-    </script>
-</body>
-
-</html>

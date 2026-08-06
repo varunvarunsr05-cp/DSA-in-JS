@@ -1,14 +1,5 @@
-<!-- Tough qn- write a function to check whether two strings are anagrams or not -->
+// <!-- Tough qn- write a function to check whether two strings are anagrams or not -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
         // console.log("hi")
         let str1="evil";
         let str2="vile";
@@ -36,6 +27,3 @@
         iscontains()
         // console.log(conts)
         // console.log(str1==str2)
-    </script>
-</body>
-</html>
