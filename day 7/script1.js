@@ -1,6 +1,6 @@
 // write a function that finds the index of a given number in an array using linear search. otherwise return -1.
 
-let arr=[1,2,3,4,5];
+let arr=[1,2,4,5,3];
 
 // console.log(arr.indexOf(3))
 
@@ -20,4 +20,4 @@ function findIndex(arr,num){
     }
 }
 
-console.log(findIndex(arr,55));
+console.log(findIndex(arr,3));
