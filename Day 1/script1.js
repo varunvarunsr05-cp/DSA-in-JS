@@ -14,16 +14,31 @@
 
       // findMax();
 
-      let arr=[1,4,50,2,30,9];
+      
+      // function findMax(arr){
+      //   let max=arr[0];
+      //   // console.log(max)
+      //   for (let num of arr) {
+      //     if (num>max) {
+      //         max=num;
+      //     }
+      //   }
+      //   console.log(max)
+      // }
+      // findMax(arr);
+      
+      let arr=[1,4,50,2,300,9,99];
 
       function findMax(arr){
         let max=arr[0];
-        // console.log(max)
-        for (let num of arr) {
-          if (num>max) {
-              max=num;
-          }
-        }
         console.log(max)
+
+        for (const num of arr) {
+            if(num>max){
+              max=num;
+            }
+        }
+        return max;
       }
-      findMax(arr);
+
+      console.log(findMax(arr))

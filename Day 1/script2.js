@@ -14,21 +14,42 @@
 
         // console.log(uniChar("aabccmmdd"))
 
-        let str="gaddeaga";
+        
+        // function nonRepeat(str){
+            //     // let reverse="";
+            //     let count={};
+            //     for (const char of str) {
+        //         // console.log(char)
+        //        count[char]=(count[char] || 0)+1
+        //     }
+        //     console.log(count)
+        //     for(let char in count){
+        //         if (count[char]===1) {
+        //             let nr=char
+        //             console.log(nr)
+        //         }
+        //     }
+        // }
+        // nonRepeat(str)
+        
+        let str="gaddageaf";
 
         function nonRepeat(str){
-            let reverse="";
-            let count={};
-            for (const char of str) {
-                console.log(char)
-               count[char]=(count[char] || 0)+1
+            count={}
+            let nR=[];
+
+            for(let char of str){
+                // console.log(char)
+                count[char]=(count[char]|| 0)+1
             }
-            console.log(count)
             for(let char in count){
-                if (count[char]===1) {
-                    let nr=char
-                    console.log(nr)
+                if(count[char]==1){
+                    nR.push(char)
+                    // return char;
                 }
             }
+            return nR;
+            // return count;
         }
-        nonRepeat(str)
+
+        console.log(nonRepeat(str))

@@ -1,23 +1,35 @@
         // console.log("hi");
-        let str="programming";
-
-            function common1(str){
-                
-                // console.log(str)
-                let final="";
-
-                for (let char of str) {
-                        // console.log(char)
-                        if (!final.includes(char)) {
-                            final+=char;
-                            // console.log(!final.includes(char));
-                        }
-
-                    }
-                    console.log(final);
-                }
+        
+        // function remDupl(str){
             
-            common1(str)
+        //     // console.log(str)
+        //     let final="";
+        
+        //     for (let char of str) {
+            //             // console.log(char)
+            //             if (!final.includes(char)) {
+            //                 final+=char;
+            //                 // console.log(!final.includes(char));
+            //             }
+
+            //         }
+            //         console.log(final);
+            //     }
+            let str="rraammaa";
+
+            function remDupl(str){
+                let final=""
+
+                for (const char of str) {
+                    if (!(final.includes(char))) {
+                        final+=char;
+                    }
+                }
+                return final;
+            }
+
+            
+            console.log(`removed duplicates "${remDupl(str)}"`);
 
 
          //the way I tried to solve this problem   

@@ -1,20 +1,39 @@
 
-        
-        function countOvels(str){
-           let ovels="aeiou";
-           let count=0;
+// function countOvels(str) {
+//     let ovels = "aeiou";
+//     let count = 0;
+//     let got = "";
 
-            for (let char of str.toLowerCase()) {
-                // console.log(char)
+//     for (let char of str.toLowerCase()) {
+//         // console.log(char)
+//         if (ovels.includes(char)) {
+//             if (!(got.includes(char))) {
+//                 got += char;
+//             }
+//             count++;
+//         }
+//     }
+//     // return count;
+//     console.log(count, got.length)
+// }
+        let str="raameesii";
+        
+        function findOvels(){
+            let ovels="aeiou";
+            let count=0;
+            let got="";
+
+            for (const char of str) {
                 if (ovels.includes(char)) {
+                    if (!(got.includes(char))) {
+                        got+=char;
+                    }
                     count++;
                 }
             }
-            // return count;
-            console.log(count)
+            console.log(count, got, got.length);
         }
-
-        countOvels("IAMNGeeioG");
+        findOvels(str);
 
         //the first way i tried to solve the problem
         // function findOvels(str){
