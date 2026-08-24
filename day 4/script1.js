@@ -3,17 +3,29 @@
 // countOccurrences([1, 2, 3, 2, 4, 2], 2);
 // Output
 // 3
-let nums=[1,2,3,2,4,3,2,2];
+
+// function timesAppeared(nums,num){
+    //     let count=0;
+//     for (const n of nums) {
+//         if (n===num) {
+//             count++;
+//         }
+//     }
+//     console.log(count)
+//     // console.log(n)
+// }
+let nums=[1,2,3,3,2,4,3,2,2,3];
 
 function timesAppeared(nums,num){
     let count=0;
+
     for (const n of nums) {
         if (n===num) {
             count++;
         }
     }
     console.log(count)
-    // console.log(n)
 }
+
 
 timesAppeared(nums,3)
