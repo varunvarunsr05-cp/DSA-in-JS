@@ -4,20 +4,30 @@ let arr=[1,2,4,5,3];
 
 // console.log(arr.indexOf(3))
 
-function findIndex(arr,num){
-    let index;
+// function findIndex(arr,num){
+//     let index;
 
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i]===num) {
+//             index=i;
+//         }
+//     }
+//     if (index || index===0) {
+//         return index;
+//     }
+//     else{
+//         return -1
+//     }
+// }
+
+function findIndex(arr,num){
     for (let i = 0; i < arr.length; i++) {
         if (arr[i]===num) {
-            index=i;
+            return i;
         }
-    }
-    if (index || index===0) {
-        return index;
-    }
-    else{
-        return -1
     }
 }
 
-console.log(findIndex(arr,3));
+console.log(findIndex(arr,5));
+
+// console.log(arr.indexOf(4));

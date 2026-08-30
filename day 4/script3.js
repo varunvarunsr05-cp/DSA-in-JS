@@ -4,69 +4,61 @@
 // Output
 // true
 
-// let arr1=[1,1,2];
-// let arr2=[1,2];
 
-// // console.log(arr2.includes["4"]);
+// function sameElements(arr1, arr2) {
+//   let isfalse=""
 
-// function isSameElements(arr1,arr2){
-//     let count=0;
-//     // if (arr1.length!==arr2.length) {
-//     //     return false;
-//     // }else{
-//     arr1.forEach(element1 => {
-//         arr2.forEach(element2 => {
-//             if (element1===element2) {
-//                 count++;
-//                 // console.log("true")
-//             }
-//         });
-//         // console.log(element);
-//     });
+//   const freq = new Map();
 
-//     if (count===arr1.length && arr1.length) {
-//         return true;
-//     }else{
-//         return false;
+//   for (const num of arr1) {
+//     freq.set(num, (freq.get(num) || 0) + 1);
+//   }
+
+//   for (const num of arr2) {
+//     if (!(freq.has(num))){ 
+//       isfalse+="false ";
+//     }else {
+//       isfalse+="true "
 //     }
+
+//   }
+//   console.log(!((isfalse).includes("false")))
+
 // }
+//   let and="";
+//   and+="true&&false";
 
-// console.log(isSameElements(arr1,arr2))
+let arr1 = [1, 2, 3, 7,4, 5, 4, 6];
+let arr2 = [1, 2, 3,7, 5, 4, 8,6,6]
+// sameElements(arr1,arr2);
 
-function sameElements(arr1, arr2) {
-  // if (arr1.length !== arr2.length) return false;
-  let isfalse=""
+function isSameElements(arr1, arr2) {
+  // let sarr1=arr1.sort();
+  // let sarr2=arr2.sort();
+  // let countElements={}
+  let bigArray = arr1;
+  let smallArray = arr2;
+  let result = "hey";
 
-  const freq = new Map();
-  
-  for (const num of arr1) {
-    freq.set(num, (freq.get(num) || 0) + 1);
+  if (bigArray.length < smallArray.length) {
+    bigArray = [arr2];
+    smallArray = [arr1];
+    bigArray.forEach(e => {
+      console.log(e)
+      if (smallArray.includes(e)) {
+        return result = smallArray.includes(e);
+      } else return result = smallArray.includes(e);
+    });
+  } else {
+    bigArray.forEach(e => {
+      if (smallArray.includes(e)) {
+        return result = smallArray.includes(e);
+      } else return result = smallArray.includes(e);
+    });
   }
 
-  for (const num of arr2) {
-    // console.log(num)
-    if (!(freq.has(num))){ 
-      isfalse+="false ";
-      // console.log(freq.has(num))
-    }else {
-      // return true;
-      isfalse+="true "
-    }
-
-    // freq.set(num, freq.get(num) - 1);
-
-    // if (freq.get(num) === 0) freq.delete(num);
-  }
-  console.log(!((isfalse).includes("false")))
-
-  // return freq.size === 0;
+  console.log(result)
+  // console.log(sarr2)
 }
-  let and="";
-  and+="true&&false";
 
-  // console.log(and.includes("&&&"))
- let arr1=[2, 1,3,4,4, 1];//must to be small or equal to arr2 in elelments
- let arr2=[1,1, 1,3,4,2,2]   //can be small big or eq elelments
-// console.log(sameElements(arr1,arr2)); 
-sameElements(arr1,arr2);
-// console.log(sameElements([1, 1, 2], [1, 2, 2])); // false
+isSameElements(arr1, arr2);
