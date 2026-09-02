@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* */
+        ol{
+            counter-reset: i;
+        }
+
+        li::before{
+            counter-increment: i;
+            content: counter(i);
+        }
+        *{
+            background-color: white;
+        }
+        h1::before{
+            content: "😡";
+        }
+        .box1{
+            position: absolute;
+            /* z-index: 10; */
+            visibility: hidden;
+        }
+        .box2{
+            position: absolute;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>ram</li>
+        <li>ram1</li>
+        <li>ram5</li>
+    </ol>
+    <h1>hello</h1>
+    <div class="box1" style="background-color: blue; width: 500px; height: 100px;">
+        <!-- i am box 1 -->
+        <div class="box2" style="background-color: red; width: 500px; height: 300px;" >
+            i am box 2
+        </div>
+    </div>
+    <h2>hey boy</h2>
+</body>
+</html>

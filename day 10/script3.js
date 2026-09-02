@@ -22,7 +22,7 @@
 // arr1.sort((a, b) => a - b)
 // console.log(arr1)
 
-//Nan not a number
+// Nan not a number
 // console.log(parseInt("byebye"));
 
 // console.log([5] == [5]);
