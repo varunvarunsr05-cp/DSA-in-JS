@@ -19,5 +19,20 @@ let arr=[11,22,33,44,55]
 //     return -1;
 // }
 
+function binarySerach(arr,trgt){
+    let left=0;
+    let right=arr.length;
 
-console.log(binarySearch(arr,11))
+    while (left<right) {
+        let mid=Math.floor((left+right)/2);
+            if(trgt===arr[mid]){
+                return mid;
+            }else if (trgt<arr[mid]) {
+                right=mid-1;
+            }else{
+                left=mid+1;
+            }
+    }
+}
+
+console.log(binarySerach(arr,55));
