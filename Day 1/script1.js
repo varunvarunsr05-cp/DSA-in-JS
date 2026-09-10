@@ -26,19 +26,32 @@
       //   console.log(max)
       // }
       // findMax(arr);
+
+      let arr=[1,4,50,2,30,9,9,100];
+      //sort a Array using inbuilt method
+      // console.log(arr.sort((a,b)=>a-b));
       
-      let arr=[1,4,50,2,300,9,99];
 
       function findMax(arr){
-        let max=arr[0];
-        console.log(max)
+          let max=arr[0];
 
-        for (const num of arr) {
-            if(num>max){
-              max=num;
+          arr.forEach(e => {
+            if (e>max) {
+              max=e;
             }
-        }
-        return max;
+          });
+          return max;
       }
 
       console.log(findMax(arr))
+      // function findMax(arr){
+      //   let max=arr[0];
+      //   console.log(max)
+
+      //   for (const num of arr) {
+      //       if(num>max){
+      //         max=num;
+      //       }
+      //   }
+      //   return max;
+      // }
