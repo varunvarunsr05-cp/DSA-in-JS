@@ -30,21 +30,35 @@
 //     }
 //     // findMax(nums1)
 //     findMax(nums)
-let nums = [6,5,4,7];
+
+// function secLargNum(nums){
+//     let larg=nums[0];
+//     let secLarg=-Infinity;
+
+//     for (const num of nums) {
+    //         if (num>larg) {
+        //             secLarg=larg;
+        //             larg=num;
+        //         }
+        //     }
+        //     console.log("sec large num is",secLarg,"first larg num is",larg)
+// }
+let nums = [6,5,4,7,10];
 
 function secLargNum(nums){
-    let larg=nums[0];
-    let secLarg=-Infinity;
-
-    for (const num of nums) {
-        if (num>larg) {
-            secLarg=larg;
-            larg=num;
+    let max=nums[0];
+    let temp;
+    nums.forEach(e => {
+        if (e>max) {
+            temp=max;
+            max=e;
+            e=temp;
         }
-    }
-    console.log("sec large num is",secLarg,"first larg num is",larg)
+    });
+    return temp;
 }
-secLargNum(nums);
+
+console.log(secLargNum(nums));
 // function secondLargest(nums){
 //     let max=nums[0];
 //     let second=-Infinity;
