@@ -15,21 +15,34 @@
             //         }
             //         console.log(final);
             //     }
-            let str="rraammaa";
+            let str="raamamdevaad";
 
             function remDupl(str){
-                let final=""
+                let arrStr=str.split("");
+                let nStr="";
+                console.log(arrStr);
 
-                for (const char of str) {
-                    if (!(final.includes(char))) {
-                        final+=char;
+                arrStr.forEach(e => {
+                    if (!nStr.includes(e)) {
+                        nStr+=e;
                     }
-                }
-                return final;
+                });
+                return nStr;
             }
 
+            console.log(`removed duplicates of "${remDupl(str)}"`);
+            // function remDupl(str){
+            //     let final=""
+
+            //     for (const char of str) {
+            //         if (!(final.includes(char))) {
+            //             final+=char;
+            //         }
+            //     }
+            //     return final;
+            // }
+
             
-            console.log(`removed duplicates "${remDupl(str)}"`);
 
 
          //the way I tried to solve this problem   

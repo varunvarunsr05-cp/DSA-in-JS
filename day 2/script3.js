@@ -16,24 +16,39 @@
 //     // return count;
 //     console.log(count, got.length)
 // }
-        let str="raameesii";
-        
-        function findOvels(){
-            let ovels="aeiou";
-            let count=0;
-            let got="";
+        let str="varune";
 
-            for (const char of str) {
-                if (ovels.includes(char)) {
-                    if (!(got.includes(char))) {
-                        got+=char;
+        function findOvels(str){
+            let ovels="aeiou";
+            let strOvls="";
+
+            for (const e of str) {
+                // console.log(e)
+                if (ovels.includes(e)) {
+                    if (!strOvls.includes(e)) {
+                        strOvls+=e;
                     }
-                    count++;
                 }
             }
-            console.log(count, got, got.length);
+            console.log(strOvls);
         }
+        
         findOvels(str);
+        // function findOvels(){
+        //     let ovels="aeiou";
+        //     let count=0;
+        //     let got="";
+
+        //     for (const char of str) {
+        //         if (ovels.includes(char)) {
+        //             if (!(got.includes(char))) {
+        //                 got+=char;
+        //             }
+        //             count++;
+        //         }
+        //     }
+        //     console.log(count, got, got.length);
+        // }
 
         //the first way i tried to solve the problem
         // function findOvels(str){
