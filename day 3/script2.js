@@ -6,21 +6,33 @@
         let sentc="hello world";
         // let words=sentc.split(" ")
         // console.log("words",words)
-
         function reverseWord(sentc){
-            let words=sentc.split(" ")
-            console.log(words)
-            let reverse=""
-
-            for (const word of words) {
-                for (let i = word.length-1; i >=0; i--) {
-                    reverse+=word[i];
+            let sntcArr=sentc.split(" ")
+            let reverse="";
+            console.log(sntcArr)
+            sntcArr.forEach(e => {
+                for (let i = e.length-1; i >= 0; i--) {
+                    reverse+=e[i]
                 }
                 reverse+=" ";
-            }
-            console.log(reverse)
+            });
+            return reverse;
         }
-        reverseWord(sentc)
+
+        console.log(reverseWord(sentc));
+        // function reverseWord(sentc){
+        //     let words=sentc.split(" ")
+        //     console.log(words)
+        //     let reverse=""
+
+        //     for (const word of words) {
+        //         for (let i = word.length-1; i >=0; i--) {
+        //             reverse+=word[i];
+        //         }
+        //         reverse+=" ";
+        //     }
+        //     console.log(reverse)
+        // }
         // let splited=sentance.split(" ");
         // console.log(splited);
 
