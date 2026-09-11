@@ -5,7 +5,7 @@
 // 3
 
 // function timesAppeared(nums,num){
-    //     let count=0;
+//     let count=0;
 //     for (const n of nums) {
 //         if (n===num) {
 //             count++;
@@ -14,18 +14,30 @@
 //     console.log(count)
 //     // console.log(n)
 // }
-let nums=[1,2,3,3,2,4,3,2,2,3];
+let nums = [1, 2, 3, 3, 2, 4, 5, 5,3, 2, 2, 3];
 
-function timesAppeared(nums,num){
+function repeated(nums, n) {
     let count=0;
 
-    for (const n of nums) {
-        if (n===num) {
-            count++;
+    nums.forEach(e => {
+        if (e === n) {
+            return count++;
         }
-    }
-    console.log(count)
+    })
+    console.log(count);
 }
 
+repeated(nums, 5)
+// function timesAppeared(nums,num){
+//     let count=0;
 
-timesAppeared(nums,3)
+//     for (const n of nums) {
+//         if (n===num) {
+//             count++;
+//         }
+//     }
+//     console.log(count)
+// }
+
+
+// timesAppeared(nums,3)
